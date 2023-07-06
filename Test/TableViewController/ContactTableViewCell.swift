@@ -1,6 +1,8 @@
 import UIKit
 
 class ContactTableViewCell: UITableViewCell {
+    weak var delegate: ContactTableViewCellDelegate?
+    
     let profileImageView:UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFill //image will never be stretched vertically or horizontally
@@ -94,6 +96,6 @@ class ContactTableViewCell: UITableViewCell {
     
     @objc func profileImageTapped(_ gestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = gestureRecognizer.view as! UIImageView
-        print(tappedImage.tag)
+        delegate?.profileImageTapped(image: tappedImage.image!)
     }
 }

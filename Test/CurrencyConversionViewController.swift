@@ -73,13 +73,12 @@ class CurrencyConversionViewController: UIViewController {
     }
     
     @objc private func submitbuttonTapped() {
-//        APIService.shared.getConversionRate { [weak self] conversionRate in
-//            // UITextField.text must be used from main thread only
-//            DispatchQueue.main.async {
-//                self?.convertCurrency(with: conversionRate)
-//            }
-//        }
-        convertCurrency(with: 0.2)
+        APIService.shared.getConversionRate { [weak self] conversionRate in
+            // UITextField.text must be used from main thread only
+            DispatchQueue.main.async {
+                self?.convertCurrency(with: conversionRate)
+            }
+        }
     }
     
     private func convertCurrency(with conversionRate: Double) {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate {
+class ContactsViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate, ContactTableViewCellDelegate {
     let contactsTableView = UITableView()
     private let contacts = APIService.shared.getContacts() // model
     var searchBar: UISearchBar!
@@ -55,6 +55,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UISearchB
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
         cell.contact = filteredContacts[indexPath.row]
+        cell.delegate = self
         return cell
     }
     
@@ -76,6 +77,12 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UISearchB
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredContacts = searchText.isEmpty ? contacts : contacts.filter { $0.name.lowercased().contains(searchText.lowercased()) }
         contactsTableView.reloadData()
+    }
+    
+    func profileImageTapped(image: UIImage) {
+        let imageVC = ImageDetailViewController()
+        imageVC.image = image
+        navigationController?.pushViewController(imageVC, animated: true)
     }
     
     /*

@@ -34,6 +34,7 @@
 		880AD5432A4567340063FFBA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD5422A4567340063FFBA /* APIService.swift */; };
 		886D13252A53FED700F8B96F /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D13242A53FED700F8B96F /* ContactTableViewCell.swift */; };
 		886D13272A5509C400F8B96F /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D13262A5509C400F8B96F /* MovieDetailViewController.swift */; };
+		886D13292A568EE600F8B96F /* ContactTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D13282A568EE600F8B96F /* ContactTableViewCellDelegate.swift */; };
 		88EBF2292A4928190012AE48 /* CurrencyConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF2282A4928180012AE48 /* CurrencyConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		880AD5422A4567340063FFBA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		886D13242A53FED700F8B96F /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		886D13262A5509C400F8B96F /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		886D13282A568EE600F8B96F /* ContactTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		88EBF2282A4928180012AE48 /* CurrencyConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewController.swift; sourceTree = "<group>"; };
 		C159D95EBD5CFB948DA34F3D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		D7335258B8265E33EF520D71 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				880AD44C2A43E48E0063FFBA /* ContactsViewController.swift */,
 				886D13242A53FED700F8B96F /* ContactTableViewCell.swift */,
+				886D13282A568EE600F8B96F /* ContactTableViewCellDelegate.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				880AD40A2A4199F70063FFBA /* AppDelegate.swift in Sources */,
 				880AD4482A42BEBA0063FFBA /* ImageCell.swift in Sources */,
 				880AD40C2A4199F70063FFBA /* SceneDelegate.swift in Sources */,
+				886D13292A568EE600F8B96F /* ContactTableViewCellDelegate.swift in Sources */,
 				880AD4422A4289B10063FFBA /* GridViewController.swift in Sources */,
 				880AD43F2A41A6750063FFBA /* Reminder.swift in Sources */,
 				880AD4642A4531D00063FFBA /* MovieCell.swift in Sources */,
