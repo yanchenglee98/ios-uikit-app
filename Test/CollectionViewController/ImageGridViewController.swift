@@ -42,9 +42,15 @@ class ImageGridViewController: UIViewController, UICollectionViewDelegateFlowLay
     
     // UICollectionViewDelegateFlowLayout method to set the size of each item dynamically
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let image = images[indexPath.item]
         let screenWidth = collectionView.bounds.width
-        let itemWidth = (screenWidth - 30) / 2
-        return CGSize(width: itemWidth, height: itemWidth)
+        
+        let maximumItemWidth = screenWidth - 30 // Adjust spacing as needed
+        let aspectRatio = image.size.width / image.size.height
+        let itemWidth = maximumItemWidth / 2
+        let itemHeight = itemWidth / aspectRatio
+        print("\(image.size.width), \(image.size.height), \(maximumItemWidth)")
+        return CGSize(width: itemWidth, height: itemHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

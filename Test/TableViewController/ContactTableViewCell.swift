@@ -56,9 +56,15 @@ class ContactTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(profileImageTapped(_:)))
-        profileImageView.addGestureRecognizer(tapGesture)
+        // set up tap gesture using delegate pattern
+        let profileTapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
+        profileImageView.addGestureRecognizer(profileTapGesture)
         profileImageView.isUserInteractionEnabled = true
+        
+        // tap gesture recongizer need to be a new instance
+        let countryTapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
+        countryImageView.addGestureRecognizer(countryTapGesture)
+        countryImageView.isUserInteractionEnabled = true
         
         self.contentView.addSubview(profileImageView)
         containerView.addSubview(nameLabel)
@@ -94,8 +100,8 @@ class ContactTableViewCell: UITableViewCell {
         super.init(coder: coder)
     }
     
-    @objc func profileImageTapped(_ gestureRecognizer: UITapGestureRecognizer) {
+    @objc func imageTapped(_ gestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = gestureRecognizer.view as! UIImageView
-        delegate?.profileImageTapped(image: tappedImage.image!)
+        delegate?.imageTapped(image: tappedImage.image!)
     }
 }

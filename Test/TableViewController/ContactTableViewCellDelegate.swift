@@ -1,5 +1,5 @@
 import UIKit
 
 protocol ContactTableViewCellDelegate: AnyObject {
-    func profileImageTapped(image: UIImage)
+    func imageTapped(image: UIImage)
 }

@@ -79,10 +79,11 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UISearchB
         contactsTableView.reloadData()
     }
     
-    func profileImageTapped(image: UIImage) {
+    func imageTapped(image: UIImage) {
         let imageVC = ImageDetailViewController()
         imageVC.image = image
         navigationController?.pushViewController(imageVC, animated: true)
+//        present(imageVC, animated: true)
     }
     
     /*
