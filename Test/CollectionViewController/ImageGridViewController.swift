@@ -5,7 +5,7 @@ class ImageGridViewController: UIViewController, UICollectionViewDelegateFlowLay
     var dataSource: ImageDataSource!
     
     // initialise array of images
-    let images: [UIImage] = [UIImage(named: "image1")!, UIImage(named: "image2")!, UIImage(named: "bigo3")!, UIImage(named: "bigo4")!, UIImage(named: "image3")!, UIImage(named: "image4")!, UIImage(named: "image5")!, UIImage(named: "image6")!, UIImage(named: "image7")!, UIImage(named: "image8")!]
+    let images: [UIImage] = [UIImage(named: "image1")!, UIImage(named: "image2")!, UIImage(named: "bigo3")!, UIImage(named: "bigo4")!, UIImage(named: "image9")!, UIImage(named: "image3")!, UIImage(named: "image4")!, UIImage(named: "image10")!, UIImage(named: "image5")!, UIImage(named: "image6")!, UIImage(named: "image7")!, UIImage(named: "image8")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,6 @@ class ImageGridViewController: UIViewController, UICollectionViewDelegateFlowLay
         let aspectRatio = image.size.width / image.size.height
         let itemWidth = maximumItemWidth / 2
         let itemHeight = itemWidth / aspectRatio
-        print("\(image.size.width), \(image.size.height), \(maximumItemWidth)")
         return CGSize(width: itemWidth, height: itemHeight)
     }
     

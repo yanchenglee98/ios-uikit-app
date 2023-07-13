@@ -7,4 +7,5 @@ target 'Test' do
 
   # Pods for Test
   pod 'SDWebImage', :modular_headers => true
+  pod 'SnapKit', '~> 5.0.0'
 end

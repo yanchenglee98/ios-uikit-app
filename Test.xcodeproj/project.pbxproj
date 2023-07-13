@@ -25,7 +25,6 @@
 		880AD44A2A42C4550063FFBA /* ImageGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD4492A42C4550063FFBA /* ImageGridViewController.swift */; };
 		880AD44D2A43E48E0063FFBA /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD44C2A43E48E0063FFBA /* ContactsViewController.swift */; };
 		880AD44F2A43E5080063FFBA /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD44E2A43E5080063FFBA /* Contact.swift */; };
-		880AD4512A43E5440063FFBA /* ContactAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD4502A43E5440063FFBA /* ContactAPI.swift */; };
 		880AD45A2A443E370063FFBA /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD4592A443E370063FFBA /* ContactDetailViewController.swift */; };
 		880AD45C2A44429E0063FFBA /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD45B2A44429E0063FFBA /* ImageDetailViewController.swift */; };
 		880AD4622A4531C50063FFBA /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880AD4612A4531C50063FFBA /* MovieViewController.swift */; };
@@ -35,6 +34,14 @@
 		886D13252A53FED700F8B96F /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D13242A53FED700F8B96F /* ContactTableViewCell.swift */; };
 		886D13272A5509C400F8B96F /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D13262A5509C400F8B96F /* MovieDetailViewController.swift */; };
 		886D13292A568EE600F8B96F /* ContactTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D13282A568EE600F8B96F /* ContactTableViewCellDelegate.swift */; };
+		88929D8B2A5BAB9A00B6CE7A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D8A2A5BAB9A00B6CE7A /* Images.swift */; };
+		88929D8D2A5BABCC00B6CE7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D8C2A5BABCC00B6CE7A /* Constants.swift */; };
+		88929D8F2A5BACBE00B6CE7A /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D8E2A5BACBE00B6CE7A /* FirstView.swift */; };
+		88929D922A5BC37500B6CE7A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D912A5BC37500B6CE7A /* SecondView.swift */; };
+		88929D942A5BDF8800B6CE7A /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D932A5BDF8800B6CE7A /* ThirdView.swift */; };
+		88929D962A5BE2E600B6CE7A /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D952A5BE2E600B6CE7A /* FooterCell.swift */; };
+		88929D982A5BE62800B6CE7A /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929D972A5BE62800B6CE7A /* CustomCollectionViewController.swift */; };
+		88929DA92A5EA9A700B6CE7A /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88929DA82A5EA9A700B6CE7A /* SampleViewController.swift */; };
 		88EBF2292A4928190012AE48 /* CurrencyConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBF2282A4928180012AE48 /* CurrencyConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +85,6 @@
 		880AD4492A42C4550063FFBA /* ImageGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridViewController.swift; sourceTree = "<group>"; };
 		880AD44C2A43E48E0063FFBA /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		880AD44E2A43E5080063FFBA /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		880AD4502A43E5440063FFBA /* ContactAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAPI.swift; sourceTree = "<group>"; };
 		880AD4592A443E370063FFBA /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		880AD45B2A44429E0063FFBA /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		880AD4612A4531C50063FFBA /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,14 @@
 		886D13242A53FED700F8B96F /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		886D13262A5509C400F8B96F /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		886D13282A568EE600F8B96F /* ContactTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		88929D8A2A5BAB9A00B6CE7A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		88929D8C2A5BABCC00B6CE7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		88929D8E2A5BACBE00B6CE7A /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		88929D912A5BC37500B6CE7A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		88929D932A5BDF8800B6CE7A /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		88929D952A5BE2E600B6CE7A /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		88929D972A5BE62800B6CE7A /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		88929DA82A5EA9A700B6CE7A /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		88EBF2282A4928180012AE48 /* CurrencyConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewController.swift; sourceTree = "<group>"; };
 		C159D95EBD5CFB948DA34F3D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		D7335258B8265E33EF520D71 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +175,8 @@
 		880AD4082A4199F70063FFBA /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				88929D902A5BC30A00B6CE7A /* CustomCells */,
+				88929D892A5BAB7900B6CE7A /* Helpers */,
 				880AD4092A4199F70063FFBA /* AppDelegate.swift */,
 				880AD40B2A4199F70063FFBA /* SceneDelegate.swift */,
 				880AD40D2A4199F70063FFBA /* ViewController.swift */,
@@ -222,7 +238,6 @@
 		880AD4532A44014D0063FFBA /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				880AD4502A43E5440063FFBA /* ContactAPI.swift */,
 				880AD5422A4567340063FFBA /* APIService.swift */,
 			);
 			path = Service;
@@ -238,12 +253,34 @@
 			path = DetailViewController;
 			sourceTree = "<group>";
 		};
+		88929D892A5BAB7900B6CE7A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				88929D8A2A5BAB9A00B6CE7A /* Images.swift */,
+				88929D8C2A5BABCC00B6CE7A /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		88929D902A5BC30A00B6CE7A /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				88929D8E2A5BACBE00B6CE7A /* FirstView.swift */,
+				88929D912A5BC37500B6CE7A /* SecondView.swift */,
+				88929D932A5BDF8800B6CE7A /* ThirdView.swift */,
+				88929D952A5BE2E600B6CE7A /* FooterCell.swift */,
+				88929D972A5BE62800B6CE7A /* CustomCollectionViewController.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		88EBF2272A4924CA0012AE48 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				880AD44C2A43E48E0063FFBA /* ContactsViewController.swift */,
 				886D13242A53FED700F8B96F /* ContactTableViewCell.swift */,
 				886D13282A568EE600F8B96F /* ContactTableViewCellDelegate.swift */,
+				88929DA82A5EA9A700B6CE7A /* SampleViewController.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -404,20 +441,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88929D8D2A5BABCC00B6CE7A /* Constants.swift in Sources */,
 				880AD44F2A43E5080063FFBA /* Contact.swift in Sources */,
 				880AD5432A4567340063FFBA /* APIService.swift in Sources */,
+				88929D922A5BC37500B6CE7A /* SecondView.swift in Sources */,
 				880AD44A2A42C4550063FFBA /* ImageGridViewController.swift in Sources */,
+				88929D8F2A5BACBE00B6CE7A /* FirstView.swift in Sources */,
 				880AD5412A4565F90063FFBA /* Movie.swift in Sources */,
 				880AD44D2A43E48E0063FFBA /* ContactsViewController.swift in Sources */,
 				880AD4622A4531C50063FFBA /* MovieViewController.swift in Sources */,
 				880AD40E2A4199F70063FFBA /* ViewController.swift in Sources */,
+				88929D962A5BE2E600B6CE7A /* FooterCell.swift in Sources */,
+				88929D942A5BDF8800B6CE7A /* ThirdView.swift in Sources */,
 				880AD45C2A44429E0063FFBA /* ImageDetailViewController.swift in Sources */,
-				880AD4512A43E5440063FFBA /* ContactAPI.swift in Sources */,
 				88EBF2292A4928190012AE48 /* CurrencyConversionViewController.swift in Sources */,
 				880AD40A2A4199F70063FFBA /* AppDelegate.swift in Sources */,
 				880AD4482A42BEBA0063FFBA /* ImageCell.swift in Sources */,
 				880AD40C2A4199F70063FFBA /* SceneDelegate.swift in Sources */,
+				88929D982A5BE62800B6CE7A /* CustomCollectionViewController.swift in Sources */,
+				88929D8B2A5BAB9A00B6CE7A /* Images.swift in Sources */,
 				886D13292A568EE600F8B96F /* ContactTableViewCellDelegate.swift in Sources */,
+				88929DA92A5EA9A700B6CE7A /* SampleViewController.swift in Sources */,
 				880AD4422A4289B10063FFBA /* GridViewController.swift in Sources */,
 				880AD43F2A41A6750063FFBA /* Reminder.swift in Sources */,
 				880AD4642A4531D00063FFBA /* MovieCell.swift in Sources */,

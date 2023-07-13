@@ -34,6 +34,7 @@ class TabBar: UITabBarController {
     func setupViewControllers() {
         viewControllers = [
             createNavController(for: ImageGridViewController(), title: NSLocalizedString("Photos", comment: ""), image: UIImage(systemName: "photo")!),
+            createNavController(for: CustomCollectionViewController(), title: NSLocalizedString("Wallpapers", comment: ""), image: UIImage(systemName: "photo.stack")!),
             createNavController(for: ContactsViewController(), title: NSLocalizedString("Contacts", comment: ""), image: UIImage(systemName: "person")!),
             createNavController(for: MovieViewController(), title: NSLocalizedString("Movies", comment: ""), image: UIImage(systemName: "play.tv")!),
             createNavController(for: CurrencyConversionViewController(), title: NSLocalizedString("Currency", comment: ""), image: UIImage(systemName: "dollarsign.arrow.circlepath")!)
