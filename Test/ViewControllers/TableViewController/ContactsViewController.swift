@@ -59,13 +59,13 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UISearchB
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let contact = filteredContacts[indexPath.row]
         showContactDetail(contact: contact)
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 85
     }
     
     private func showContactDetail(contact: Contact) {
@@ -83,7 +83,6 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UISearchB
         let imageVC = ImageDetailViewController()
         imageVC.image = image
         navigationController?.pushViewController(imageVC, animated: true)
-//        present(imageVC, animated: true)
     }
     
     /*

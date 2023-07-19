@@ -49,7 +49,7 @@ class ImageGridViewController: UIViewController, UICollectionViewDelegateFlowLay
         let aspectRatio = image.size.width / image.size.height
         let itemWidth = maximumItemWidth / 2
         let itemHeight = itemWidth / aspectRatio
-        return CGSize(width: itemWidth, height: itemHeight)
+        return CGSize(width: itemWidth, height: itemWidth)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

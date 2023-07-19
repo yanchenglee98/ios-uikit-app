@@ -1,6 +1,7 @@
 import UIKit
 
 class CurrencyConversionViewController: UIViewController {
+    private let logo = UIImageView()
     private let yuanLabel = UILabel()
     private let yuanTextField = UITextField()
     private let sgdLabel = UILabel()
@@ -16,6 +17,11 @@ class CurrencyConversionViewController: UIViewController {
     }
     
     private func setupUI() {
+        view.addSubview(logo)
+        logo.image = UIImage(named: "currencylayer")
+        logo.contentMode = .scaleAspectFit
+        logo.frame = view.bounds
+        
         yuanTextField.borderStyle = .roundedRect
         yuanTextField.placeholder = "Enter Chinese Yuan"
         view.addSubview(yuanTextField)
@@ -34,10 +40,12 @@ class CurrencyConversionViewController: UIViewController {
         submitButton.backgroundColor = .systemBlue
         submitButton.setTitleColor(.white, for: .normal)
         submitButton.layer.cornerRadius = 8
+        submitButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
         view.addSubview(submitButton)
     }
     
     private func setupConstraints() {
+        logo.translatesAutoresizingMaskIntoConstraints = false
         yuanTextField.translatesAutoresizingMaskIntoConstraints = false
         sgdTextField.translatesAutoresizingMaskIntoConstraints = false
         yuanLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -45,7 +53,11 @@ class CurrencyConversionViewController: UIViewController {
         submitButton.translatesAutoresizingMaskIntoConstraints = false
         
         let constraints = [
-            yuanLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            logo.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            logo.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            
+            yuanLabel.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 20),
             yuanLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             yuanLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             

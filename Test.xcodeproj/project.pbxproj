@@ -175,21 +175,18 @@
 		880AD4082A4199F70063FFBA /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				88929D902A5BC30A00B6CE7A /* CustomCells */,
+				8818E8D62A666D06005A1963 /* ViewControllers */,
 				88929D892A5BAB7900B6CE7A /* Helpers */,
-				880AD4092A4199F70063FFBA /* AppDelegate.swift */,
+				880AD4532A44014D0063FFBA /* Service */,
+				880AD43D2A41A6660063FFBA /* Models */,
 				880AD40B2A4199F70063FFBA /* SceneDelegate.swift */,
+				880AD4092A4199F70063FFBA /* AppDelegate.swift */,
 				880AD40D2A4199F70063FFBA /* ViewController.swift */,
+				880AD4392A419BBC0063FFBA /* TabBar.swift */,
+				88EBF2282A4928180012AE48 /* CurrencyConversionViewController.swift */,
 				880AD4122A4199F80063FFBA /* Assets.xcassets */,
 				880AD4142A4199F80063FFBA /* LaunchScreen.storyboard */,
 				880AD4172A4199F80063FFBA /* Info.plist */,
-				880AD4392A419BBC0063FFBA /* TabBar.swift */,
-				88EBF2272A4924CA0012AE48 /* TableViewController */,
-				880AD4582A443E100063FFBA /* DetailViewController */,
-				880AD4402A41AAC70063FFBA /* CollectionViewController */,
-				880AD43D2A41A6660063FFBA /* Models */,
-				880AD4532A44014D0063FFBA /* Service */,
-				88EBF2282A4928180012AE48 /* CurrencyConversionViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -251,6 +248,17 @@
 				886D13262A5509C400F8B96F /* MovieDetailViewController.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		8818E8D62A666D06005A1963 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88929D902A5BC30A00B6CE7A /* CustomCells */,
+				880AD4402A41AAC70063FFBA /* CollectionViewController */,
+				880AD4582A443E100063FFBA /* DetailViewController */,
+				88EBF2272A4924CA0012AE48 /* TableViewController */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		88929D892A5BAB7900B6CE7A /* Helpers */ = {
